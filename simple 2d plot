@@ -1,0 +1,17 @@
+#read a txt file with many colums, and plot anu=y two of them.
+import matplotlib.pyplot as plt
+A,B,C,D,E,F,G= [],[],[],[],[],[],[]
+for line in open('shms_bcm.txt','r'):
+    values = [float(s) for s in line.split()]
+    A.append(values[0])
+    B.append(values[1])
+    C.append(values[2])
+    D.append(values[3])
+    E.append(values[4])
+    F.append(values[5])
+    G.append(values[6])
+
+#plt.scatter(B,A)
+plt.scatter(B,C)
+plt.show()
+###########it reads a txt file with with 7 colums, and plots any two
